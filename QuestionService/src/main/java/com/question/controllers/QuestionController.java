@@ -19,23 +19,6 @@ public class QuestionController {
     //create
     @PostMapping
     public Question create(@RequestBody Question question) {
-//        @RequestBody QuestionDTO dto
-//        Question question = new Question();
-//        question.setQuizId(dto.getQuizId());
-//        question.setQuestion(dto.getText());
-//
-//        List<Options.java>  options = new ArrayList<>();
-//        for(OptionsDTO optionsDTO : dto.getOptions()) {
-//            Options.java option = new Options.java();
-//            option.setText(optionsDTO.getText());
-//            option.setCorrect(optionsDTO.isCorrect());
-//            option.setQuestion(question);
-//
-//            options.add(option);
-//        }
-//
-//        question.setOptions(options);
-
         return questionService.create(question);
     }
 
